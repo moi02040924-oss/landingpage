@@ -26,10 +26,10 @@ export const metadata = {
     siteName: "커리어숲",
     images: [
       {
-        url: "/avatar.png",
-        width: 800,
-        height: 600,
-        alt: "임금희 커리어 컨설턴트 캐릭터",
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "임금희 커리어 컨설턴트 | 커리어숲 Open Graph 대표 이미지",
       },
     ],
     locale: "ko_KR",
