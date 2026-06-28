@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>임금희 커리어 컨설턴트 | 16년차 직업상담사 & AI 활용 전문가 (커리어숲)</title>
+  <meta name="description" content="16년차 직업상담사이자, 신중년·소상공인이 AI와 친해지도록 돕는 커리어 컨설턴트 임금희입니다. (커리어숲 www.careerforest.co.kr)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-forest: #14362b;
+      --primary-emerald: #1e5945;
+      --accent-sage: #3a886c;
+      --accent-light-sage: #e8f3ee;
+      --accent-gold: #d4a373;
+      --accent-warm: #f4a261;
+      --bg-main: #f7f9f7;
+      --bg-card: rgba(255, 255, 255, 0.88);
+      --border-glass: rgba(30, 89, 69, 0.12);
+      --text-primary: #12231b;
+      --text-secondary: #42584d;
+      --text-muted: #6b8477;
+      --shadow-sm: 0 4px 12px rgba(20, 54, 43, 0.05);
+      --shadow-md: 0 8px 30px rgba(20, 54, 43, 0.08);
+      --shadow-lg: 0 20px 40px rgba(20, 54, 43, 0.12);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      font-family: 'Noto Sans KR', sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; font-family: inherit; border: none; background: none; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .glass-panel {
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-glass);
+      box-shadow: var(--shadow-md);
+      border-radius: var(--radius-md);
+    }
+    .badge {
+      display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px;
+      border-radius: var(--radius-full); font-size: 0.875rem; font-weight: 600;
+      background: var(--accent-light-sage); color: var(--primary-emerald);
+    }
+    .badge-gold { background: #fefae0; color: #b07d32; }
+    
+    /* Header */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(255, 255, 255, 0.92); backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(30, 89, 69, 0.1); padding: 14px 0;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; }
+    .brand-logo { width: 40px; height: 40px; border-radius: 10px; object-fit: contain; }
+    .nav-links { display: flex; gap: 28px; font-weight: 600; color: var(--text-secondary); }
+    .btn-cta {
+      padding: 10px 22px; border-radius: var(--radius-full);
+      background: linear-gradient(135deg, var(--primary-emerald), var(--primary-forest));
+      color: #fff; font-weight: 700; font-size: 0.9rem;
+    }
+    
+    /* Hero */
+    .hero { padding-top: 140px; padding-bottom: 80px; }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
+    .hero-title { font-size: 2.8rem; font-weight: 800; color: var(--primary-forest); line-height: 1.25; margin-bottom: 24px; }
+    .hero-highlight { background: linear-gradient(135deg, var(--primary-emerald), var(--accent-sage)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .avatar-card {
+      position: relative; width: 100%; max-width: 360px; height: 460px; margin: 0 auto;
+      border-radius: var(--radius-lg); background: linear-gradient(180deg, rgba(232, 243, 238, 0.6) 0%, rgba(255,255,255,0.9) 100%);
+      border: 2px solid #fff; box-shadow: var(--shadow-lg); overflow: hidden; text-align: center;
+    }
+    .avatar-img { width: 100%; height: 100%; object-fit: contain; object-position: bottom center; }
+    
+    /* Q&A & Services */
+    .section { padding: 90px 0; }
+    .section-title { font-size: 2.2rem; font-weight: 800; color: var(--primary-forest); text-align: center; margin-bottom: 12px; }
+    .section-sub { text-align: center; color: var(--text-secondary); margin-bottom: 48px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .card { padding: 32px; border-radius: 20px; background: #fff; border: 1px solid var(--border-glass); box-shadow: var(--shadow-sm); }
+    
+    /* Footer */
+    footer { background: var(--primary-forest); color: #fff; padding: 50px 0 30px 0; text-align: center; font-size: 0.9rem; color: #a7f3d0; }
+    
+    @media (max-width: 992px) {
+      .hero-grid, .grid-3 { grid-template-columns: 1fr; text-align: center; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+      <a href="#" class="brand">
+        <img src="/logo.png" alt="커리어숲 로고" class="brand-logo" onerror="this.src='https://via.placeholder.com/40'">
+        <div>
+          <span style="font-size: 1.3rem; font-weight: 800; color: var(--primary-forest);">커리어숲</span>
+          <span style="display: block; font-size: 0.7rem; color: var(--accent-sage); font-weight: 600;">CAREER FOREST</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#about">소개 & Q&A</a>
+        <a href="#services">하는 일</a>
+        <a href="#contact">연락처</a>
+      </nav>
+      <button class="btn-cta" onclick="alert('문의 이메일: careerforest@naver.com (공식 사이트 www.careerforest.co.kr)')">상담 & 강의 문의 ✉️</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div style="display:flex; gap:8px; margin-bottom:16px;">
+          <span class="badge">🌲 커리어숲 대표</span>
+          <span class="badge badge-gold">✨ 16년차 직업상담사</span>
+        </div>
+        <h1 class="hero-title">
+          사람과 AI를, 막막함과 가능성을 잇는<br>
+          <span class="hero-highlight">16년차 커리어 컨설턴트 임금희</span>입니다.
+        </h1>
+        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 32px; word-break: keep-all;">
+          신중년과 소상공인이 AI라는 새로운 날개를 달 수 있도록 돕습니다.<br>
+          이해하기 쉬운 현장 중심 강의와 1:1 컨설팅, 그리고 직접 개발한 맞춤형 AI 애플리케이션 콘텐츠로 당신의 새로운 커리어 숲을 함께 가꿔갑니다.
+        </p>
+        <div style="display:flex; gap:16px; flex-wrap:wrap; margin-bottom:40px;">
+          <a href="https://www.careerforest.co.kr" target="_blank" class="btn-cta" style="padding:14px 28px; font-size:1rem;">🌐 공식 웹사이트 방문하기</a>
+        </div>
+      </div>
+      <div>
+        <div class="avatar-card">
+          <img src="/avatar.png" alt="임금희 캐릭터" class="avatar-img" onerror="this.src='https://via.placeholder.com/300x400'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Q&A Section -->
+  <section id="about" class="section" style="background:#fff;">
+    <div class="container">
+      <h2 class="section-title">💬 임금희 컨설턴트 Q&A 인터뷰</h2>
+      <p class="section-sub">현장과 기술, 그리고 사람을 향한 16년차 베테랑의 이야기</p>
+      
+      <div class="grid-3">
+        <div class="card">
+          <h3 style="color:var(--primary-emerald); margin-bottom:12px;">Q1. 역할 한 줄 소개</h3>
+          <p style="font-weight:700; color:var(--primary-forest); font-size:1.05rem;">"16년차 직업상담사이자, 신중년·소상공인이 AI와 친해지도록 돕는 커리어 컨설턴트 — 요즘은 직접 앱도 만드는 사람"</p>
+        </div>
+        <div class="card">
+          <h3 style="color:var(--primary-emerald); margin-bottom:12px;">Q2. 매주 반드시 하는 일 3가지</h3>
+          <p style="font-size:0.95rem; color:var(--text-secondary); line-height:1.7;">
+            1) 🤝 <b>현장에서 사람 만나기</b> (소상공인·신중년 강의/컨설팅)<br>
+            2) 📚 <b>AI로 콘텐츠 만들기</b> (자체 실습 워크북 제작)<br>
+            3) 💡 <b>배운 걸 강의 & 앱에 녹이기</b> (최신 AI 도구 직접 검증)
+          </p>
+        </div>
+        <div class="card">
+          <h3 style="color:var(--primary-emerald); margin-bottom:12px;">Q3. 나를 한 단어로 표현하면?</h3>
+          <p style="font-weight:700; color:var(--primary-forest); font-size:1.1rem; margin-bottom:8px;">🌟 "연결자 (Connector)"</p>
+          <p style="font-size:0.95rem; color:var(--text-secondary);">사람과 AI를, 막막함과 새로운 가능성을 단단하게 잇는 다정한 가이드가 되고자 합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">💼 내가 하는 일 (핵심 분야)</h2>
+      <p class="section-sub">막막했던 업무 현장에 가장 명확한 AI 솔루션을 제공합니다.</p>
+
+      <div class="grid-3">
+        <div class="card">
+          <div style="font-size:2.5rem; margin-bottom:16px;">🌲</div>
+          <h3 style="font-size:1.3rem; color:var(--primary-forest); margin-bottom:10px;">신중년 & 소상공인 AI 커리어 컨설팅</h3>
+          <p style="font-size:0.95rem; color:var(--text-secondary);">기술이 낯선 신중년과 사업 효율화가 필요한 소상공인을 위한 1:1 진단 및 생성형 AI 실전 활용법 지원.</p>
+        </div>
+        <div class="card">
+          <div style="font-size:2.5rem; margin-bottom:16px;">📚</div>
+          <h3 style="font-size:1.3rem; color:var(--primary-forest); margin-bottom:10px;">취업 역량 강화 & 디지털 리터러시 강의</h3>
+          <p style="font-size:0.95rem; color:var(--text-secondary);">고용센터 및 지자체 수강생 눈높이에 맞춘 강의 및 자체 워크북 제공으로 현장 즉시 적용 학습.</p>
+        </div>
+        <div class="card">
+          <div style="font-size:2.5rem; margin-bottom:16px;">💻</div>
+          <h3 style="font-size:1.3rem; color:var(--primary-forest); margin-bottom:10px;">AI 기반 맞춤형 앱 & 콘텐츠 개발</h3>
+          <p style="font-size:0.95rem; color:var(--text-secondary);">행정 서류 자동 작성기 및 상담 모의 테스트 등 실전 업무에 필요한 AI 웹/앱 프론트엔드 및 프롬프트 개발.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & QR -->
+  <section id="contact" class="section" style="background:#fff;">
+    <div class="container" style="text-align:center;">
+      <h2 class="section-title">💌 연락처 및 공식 사이트</h2>
+      <p style="font-size:1.2rem; color:var(--primary-emerald); font-weight:700; margin-top:12px;">www.careerforest.co.kr (커리어숲)</p>
+      <div style="margin-top:24px;">
+        <img src="/qr-code.png" alt="QR코드" style="width:160px; height:160px; border-radius:16px; border:2px solid var(--border-glass); padding:8px;" onerror="this.src='https://via.placeholder.com/160'">
+      </div>
+      <p style="margin-top:16px; color:var(--text-muted); font-size:0.9rem;">스마트폰 카메라인 QR 코드로 접속 가능합니다.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 커리어숲 (Career Forest) | 대표 임금희</p>
+      <p style="margin-top:6px; opacity:0.8;">사람과 AI를, 막막함과 가능성을 잇는 16년차 직업상담사 & 커리어 컨설턴트</p>
+    </div>
+  </footer>
+
+</body>
+</html>
