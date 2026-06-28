@@ -61,6 +61,9 @@ export default function Navbar({ onOpenContact }) {
           <a href="#prompt-studio" style={{ fontSize: "0.95rem", fontWeight: "600", color: "var(--text-secondary)", transition: "color 0.2s" }} onMouseOver={(e) => e.target.style.color = "var(--primary-emerald)"} onMouseOut={(e) => e.target.style.color = "var(--text-secondary)"}>
             AI 체험 실습
           </a>
+          <a href="#apply" style={{ fontSize: "0.95rem", fontWeight: "600", color: "var(--primary-emerald)", transition: "color 0.2s" }}>
+            📅 강의 신청
+          </a>
           <a href="#contact" style={{ fontSize: "0.95rem", fontWeight: "600", color: "var(--text-secondary)", transition: "color 0.2s" }} onMouseOver={(e) => e.target.style.color = "var(--primary-emerald)"} onMouseOut={(e) => e.target.style.color = "var(--text-secondary)"}>
             연락처 & QR
           </a>

@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import ProfileQA from "@/components/ProfileQA";
 import Services from "@/components/Services";
 import PromptStudio from "@/components/PromptStudio";
+import CourseApplicationSection from "@/components/CourseApplicationSection";
 import ContactSection from "@/components/ContactSection";
 import ContactModal from "@/components/ContactModal";
 import Footer from "@/components/Footer";
@@ -22,6 +23,7 @@ export default function Home() {
       <ProfileQA />
       <Services onOpenContact={handleOpenContact} />
       <PromptStudio />
+      <CourseApplicationSection />
       <ContactSection onOpenContact={handleOpenContact} />
       <Footer />
 
